@@ -1,0 +1,59 @@
+.main-cube-home{
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/background/background-home.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .main-cube-home::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    opacity: 0.6;
+  }
+  .main-cube-home__banner{
+    position: absolute;
+    text-align: center;
+  }
+  .main-cube-home__name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 62px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .main-cube-home__text{
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 2px solid var(--colors);
+  }
+  @media (max-width: 768px) {
+    .main-cube-home__name{
+      font-size: 46px;
+    }
+    .main-cube-home__text {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 414px) {
+    .main-cube-home__name{
+      font-size: 32px;
+    }
+    .main-cube-home__text{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 375px) {
+    .main-cube-home__name{
+      font-size: 24px;
+    }
+    .main-cube-home__text{
+      font-size: 16px;
+    }
+  }
+  
