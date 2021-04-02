@@ -376,5 +376,159 @@ h6 {
     font-size: 18px;
   }
 }
+.resume-content {
+  display: flex;
+}
+
+.resume-content-col {
+  flex: 0 0 50%;
+}
+
+.resume-subheading {
+  text-align: center;
+}
+.resume-subheading .resume-subheading__text {
+  position: relative;
+  border-bottom: 2px solid var(--colors);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  padding: 0 10px;
+  display: inline-block;
+}
+.resume-subheading .resume-subheading__text:before,
+.resume-subheading .resume-subheading__text:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 5px;
+  background-color: var(--colors);
+  bottom: 0;
+}
+.resume-subheading .resume-subheading__text:before {
+  left: 0;
+}
+.resume-subheading .resume-subheading__text:after {
+  right: 0;
+}
+
+.col-experience {
+  padding: 0 50px;
+  margin-top: 20px;
+  list-style: none;
+}
+.col-experience li {
+  position: relative;
+  margin-left: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.col-experience__line-left {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--colors);
+}
+
+.col-experience__line-left::after,
+.col-experience__line-left::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--colors);
+  position: absolute;
+  left: -4px;
+  top: -10px;
+  box-sizing: border-box;
+}
+
+.col-experience__line-left::before {
+  top: 100%;
+}
+
+.col-experience__text h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+.col-experience__text h5 {
+  text-transform: uppercase;
+  color: var(--colors);
+  font-size: 16px;
+  font-weight: 100;
+  padding-top: 10px;
+}
+
+.col-experience__year-to {
+  position: absolute;
+  top: -18px;
+  transform: translateX(-180%);
+}
+
+.col-experience__year-from {
+  position: absolute;
+  bottom: -18px;
+  transform: translateX(-180%);
+}
+
+.resume-skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resume-skills-box__skill {
+  flex: 0 0 41%;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--colors);
+  color: #555555;
+}
+.resume-skills-box__skill * {
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .resume-subheading__text {
+    margin-bottom: 30px;
+  }
+
+  .resume-content {
+    flex-wrap: wrap;
+  }
+
+  .resume-content-col {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 414px) {
+  .resume-subheading .resume-subheading__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .col-experience {
+    padding-left: 25px;
+  }
+
+  .col-experience__text h4 {
+    font-size: 16px;
+  }
+  .col-experience__text h5 {
+    font-size: 14px;
+  }
+
+  .resume-skills-box__skill {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
