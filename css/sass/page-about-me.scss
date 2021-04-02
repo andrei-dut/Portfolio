@@ -1,0 +1,87 @@
+.about-me-content{
+    display: flex;
+  }
+  .about-me-info{
+    color: #555;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  .about-me-info:first-of-type{
+    padding-right: 40px;
+    flex: 0 0 60%;
+  }
+  .about-me-info:last-of-type{
+    padding-left: 40px;
+  }
+  .about-me-info__title{
+    font-weight: 900;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  .about-me-info__text{
+    text-align: justify;
+    text-indent: 20px;
+  }
+    .about-me-info-list {
+      list-style: none;
+      li{
+        margin-bottom: 10px;
+      }
+    }
+  .about-me-info-list__title{
+    color: #222;
+    border-bottom: 2px solid var(--colors);
+    font-weight: bold;
+  }
+  .about-me-info-list__colon{
+    color: #222;
+    font-weight: bold;
+  }
+  .about-me-info__btn-download{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--colors);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: var(--colors);
+    border-width: 1px;
+    transition: all .2s linear;
+    outline-color: var(--colors);
+  }
+  .about-me-info__btn-download:hover{
+    color: #fff;
+    border-color: var(--colors);
+    background-color: var(--colors);
+  }
+  .main-cube-about-me__quote {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding:20px 0px;
+    margin: auto auto;
+    color: #222;
+    text-align: center;
+  }
+  @media (max-width: 1024px) {
+    .about-me-content{
+      flex-wrap: wrap;
+    }
+    .about-me-info:first-of-type{
+      margin-bottom: 40px;
+      padding-right: 0px;
+      flex: 0 0 100%;
+    }
+    .about-me-info:last-of-type{
+      padding-left: 0px;
+    }
+  }
+  @media (max-width: 414px) {
+    .main-cube-about-me__quote {
+      font-size: 18px;
+    }
+  }
+  
