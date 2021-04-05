@@ -496,17 +496,18 @@ h6 {
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
-  .resume-subheading__text {
-    margin-bottom: 30px;
-  }
-
+@media (max-width: 1024px) {
   .resume-content {
     flex-wrap: wrap;
   }
 
   .resume-content-col {
     flex: 0 0 100%;
+  }
+}
+@media (max-width: 768px) {
+  .resume-subheading__text {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 414px) {
