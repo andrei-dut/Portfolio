@@ -85,12 +85,14 @@
 .col-experience__year-to {
   position: absolute;
   top: -18px;
-  transform: translateX(-180%);
+  left: -10px;
+  transform: translateX(-100%);
 }
 .col-experience__year-from {
   position: absolute;
   bottom: -18px;
-  transform: translateX(-180%);
+  left: -10px;
+  transform: translateX(-100%);
 }
 .resume-skills-box {
   display: flex;
