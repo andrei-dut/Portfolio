@@ -31,7 +31,7 @@
     }
   .about-me-info-list__title{
     color: #222;
-    border-bottom: 2px solid var(--colors);
+    border-bottom: 2px solid var(--primary);
     font-weight: bold;
   }
   .about-me-info-list__colon{
@@ -43,18 +43,18 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    color: var(--colors);
+    color: var(--primary);
     background-color: transparent;
     border: 1px solid transparent;
-    border-color: var(--colors);
+    border-color: var(--primary);
     border-width: 1px;
     transition: all .2s linear;
-    outline-color: var(--colors);
+    outline-color: var(--primary);
   }
   .about-me-info__btn-download:hover{
     color: #fff;
-    border-color: var(--colors);
-    background-color: var(--colors);
+    border-color: var(--primary);
+    background-color: var(--primary);
   }
   .main-cube-about-me__quote {
     font-family: "Dancing Script", cursive;

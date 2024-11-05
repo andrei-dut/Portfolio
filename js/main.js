@@ -1,7 +1,8 @@
+
 (function ($) {
-  $('.portfolio-project_btn').on('click', function (evt) {
+  $('button').on('click', function (evt) {
     if (!$(evt.target).is('a')) {
-      isClickable($(this));
+      handlerBtnClickWithLink($(this));
     }
   });
 })(jQuery);
@@ -9,34 +10,25 @@
 (function ($) {
   $('.contacts-row__link').on('click', function (evt) {
     if (!$(evt.target).is('a')) {
-      isClickable($(this));
+      handlerBtnClickWithLink($(this));
     }
   });
 })(jQuery);
 
-(function ($) {
-  $('.about-me-info__btn-download').on('click', function (evt) {
-    if (!$(evt.target).is('a')) {
-      isClickable($(this));
-    }
-  });
-})(jQuery);
-
-function isClickable(obj, newTab) {
-  let $this = obj,
-      link = $this.find('a:first'),
-      href = link.attr('href'),
-      target = link.attr('target');
+function handlerBtnClickWithLink(obj, newTab) {
+  const link = obj.find('a:first');
+  const href = link.attr('href');
+  const id = link.attr('id');
+  const target = link.attr('target');
 
   if (href == undefined) {
     return;
   }
-  if (target == '_blank' || newTab) {
+  if (target == '_blank' || newTab || id === 'certificate_link') {
     window.open(href);
   } else {
     window.location.href = href;
   }
-
 }
 
 document.querySelectorAll('.portfolio-project').forEach(elem => {
@@ -59,7 +51,9 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
   document.querySelector('.header').classList.toggle('on');
 
   document.querySelectorAll('.header-main-menu__elem').forEach(elem => {
-    elem.addEventListener('click', () => document.querySelector('.header').classList.remove('on'));
+    elem.addEventListener('click', () => {
+      console.log(document.querySelector('.header'));
+      document.querySelector('.header').classList.remove('on')});
   });
 
 });

@@ -14,7 +14,7 @@
 <body>
     <div class="page-loading">
         <div class="loader">
-            <h4>Andrei Dutkovsky</h4>
+            <h4 data-translate="name">Andrey Dutkovsky</h4>
             <span></span>
             <span></span>
             <span></span>
@@ -28,11 +28,11 @@
         <header class="header">
             <div class="header-mobile">
                 <a class="header-mobile__toggle"><i class="fas fa-bars"></i></a>
-                <h2>Andrei Dutkovsky</h2>
+                <h2 data-translate="name">Andrey Dutkovsky</h2>
             </div>
             <div class="header-main">
                 <div class="header-main__card">
-                    <h2 class="header-main__name">Andrei Dutkovsky</h2>
+                    <h2 data-translate="name" class="header-main__name">Andrey Dutkovsky</h2>
                     <img class="header-main__photo" src="img/my-photo.jpg" alt="my-photo">
                 </div>
                 <nav>
@@ -40,112 +40,133 @@
                         <li class="header-main-menu__elem active">
                             <span class="header-main-menu__icon">
                                 <i class="lnr lnr-home"></i>
-                            </span>Home
+                            </span><span data-translate="home">Home</span>
                         </li>
                         <li class="header-main-menu__elem">
                             <span class="header-main-menu__icon">
                                 <i class="lnr lnr-user"></i>
-                            </span>About Me
+                            </span><span data-translate="aboutMe">About Me</span>
                         </li>
                         <li class="header-main-menu__elem">
                             <span class="header-main-menu__icon">
                                 <i class="lnr lnr-license"></i>
-                            </span>Resume
+                            </span><span data-translate="resume">Resume</span>
                         </li>
                         <li class="header-main-menu__elem">
                             <span class="header-main-menu__icon">
                                 <i class="lnr lnr-briefcase"></i>
-                            </span>Portfolio
+                            </span><span data-translate="portfolio">Portfolio</span>
                         </li>
                         <li class="header-main-menu__elem">
                             <span class="header-main-menu__icon">
                                 <i class="lnr lnr-envelope"></i>
-                            </span>Contacts
+                            </span><span data-translate="contacts">Contacts</span>
                         </li>
                     </ul>
                 </nav>
+                <div class="header-main-lang">
+                    <button onclick="setLanguage('en', event)" class="lang__btn active">EN</button>
+                    <button onclick="setLanguage('ru', event)" class="lang__btn">RU</button>
+                </div>
             </div>
         </header>
         <main class="main-cube">
             <section class="main-cube-home page-base">
                 <div class="main-cube-home__banner">
-                    <h1 class="main-cube-home__name">ANDREY DUTKOVSKY</h1>
-                    <p class="main-cube-home__text">I'm Front-end developer</p>
+                    <h1 data-translate="name" class="main-cube-home__name">ANDREY DUTKOVSKY</h1>
+                    <p data-translate="imFront" class="main-cube-home__text">I'm Front-end developer</p>
                 </div>
             </section>
             <section class="main-cube-about-me page-base">
                 <div class="main-wrapper-content">
                     <div class="header-page">
-                        <h2>About Me</h2>
+                        <h2 data-translate="aboutMe">About Me</h2>
                         <span><i class="lnr lnr-user"></i></span>
                     </div>
                     <div class="about-me-content">
                         <div class="about-me-info">
-                            <h3 class="about-me-info__title">Front-end developer</h3>
-                            <p class="about-me-info__text">I am responsible, disciplined, I treat my tasks responsibly
+                            <h3 data-translate="frontEnd" class="about-me-info__title">Front-end developer</h3>
+                            <p data-translate="aboutMeText" class="about-me-info__text">I am responsible, disciplined, I
+                                treat my tasks responsibly
                                 and bring everything to the
                                 end and on time.I quickly master new areas of activity, master new skills.I work well in
                                 a team, I know how to resolve conflicts and compromise, I do not experience difficulties
                                 when establishing contact with colleagues.I constantly add to my knowledge base from
-                                various sources.I study English every day.
+                                various sources.
                             </p>
                         </div>
                         <div class="about-me-info">
-                            <h3 class="about-me-info__title">Personal Information</h3>
+                            <h3 data-translate="personalInfo" class="about-me-info__title">Personal Information</h3>
                             <ul class="about-me-info-list">
                                 <li>
-                                    <span class="about-me-info-list__title">Name</span>
-                                    <span class="about-me-info-list__colon">:</span> Andrey Dutkovsky
+                                    <span data-translate="_name" class="about-me-info-list__title">Name</span>
+                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="name">Andrey
+                                        Dutkovsky</span>
                                 </li>
                                 <li>
-                                    <span class="about-me-info-list__title">Age</span>
-                                    <span class="about-me-info-list__colon">:</span> 27 Years
+                                    <span data-translate="age" class="about-me-info-list__title">Age</span>
+                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="years">27 Years</span>
                                 </li>
                                 <li>
-                                    <span class="about-me-info-list__title">Residence</span>
-                                    <span class="about-me-info-list__colon">:</span> Minsk, Belarus
+                                    <span data-translate="residence" class="about-me-info-list__title">Residence</span>
+                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="minsk">Minsk,
+                                        Belarus</span>
                                 </li>
                                 <li>
-                                    <span class="about-me-info-list__title">Phone</span>
+                                    <span data-translate="phone" class="about-me-info-list__title">Phone</span>
                                     <span class="about-me-info-list__colon">:</span> +375298613947
                                 </li>
                             </ul>
-                            <button type="button" class="about-me-info__btn-download">DOWNLOAD RESUME
-                                <a href="resume/CV_Andrei_Dutkovski_en.docx" download=""></a>
+                            <button type="button" class="about-me-info__btn-download">
+                                <span data-translate="downloadRes">
+                                    DOWNLOAD RESUME
+                                </span>
+                                <a id="download_link" href="resume/CV_Andrey_Dutkovsky_en.docx" download=""></a>
                             </button>
                         </div>
                     </div>
-                    <div class="main-cube-about-me__quote">Life requires movement.</div>
+                    <div data-translate="phrase" class="main-cube-about-me__quote">Life requires movement.</div>
                 </div>
             </section>
             <section class="main-cube-resume page-base">
                 <div class="main-wrapper-content">
                     <div class="header-page">
-                        <h2>My Resume</h2>
+                        <h2 data-translate="myRes">My Resume</h2>
                         <span><i class="lnr lnr-license"></i></span>
                     </div>
                     <div class="resume-content">
                         <div class="resume-content-col">
                             <div class="resume-subheading">
-                                <h3 class="resume-subheading__text">Experience</h3>
+                                <h3 data-translate="experience" class="resume-subheading__text">Experience</h3>
                             </div>
                             <ul class="col-experience">
                                 <li>
                                     <span class="col-experience__line-left"></span>
                                     <div class="col-experience__text">
-                                        <h4>Front-end Developer</h4>
-                                        <h5>CNIITU-IT</h5>
+                                        <h4 data-translate="frontEnd">Front-end Developer</h4>
+                                        <h5 data-translate="KB">KB Unmanned Helicopters</h5>
                                     </div>
                                     <span>
-                                        <span class="col-experience__year-to">Present</span>
+                                        <span data-translate="present" class="col-experience__year-to to_present">Present</span>
+                                        <span class="col-experience__year-from">2024</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="col-experience__line-left"></span>
+                                    <div class="col-experience__text">
+                                        <h4 data-translate="frontEnd">Front-end Developer</h4>
+                                        <h5 data-translate="CNIITU">CNIITU-IT</h5>
+                                    </div>
+                                    <span>
+                                        <span class="col-experience__year-to">2024</span>
                                         <span class="col-experience__year-from">2021</span>
                                     </span>
                                 </li>
                                 <li>
                                     <span class="col-experience__line-left"></span>
                                     <div class="col-experience__text">
-                                        <h4>Platoon Commander</h4>
-                                        <h5>Armed Forces of the Republic of Belarus</h5>
+                                        <h4 data-translate="commander">Platoon Commander</h4>
+                                        <h5 data-translate="armedForces">Armed Forces of the Republic of Belarus</h5>
                                     </div>
                                     <span>
                                         <span class="col-experience__year-to">2020</span>
@@ -156,14 +177,22 @@
                         </div>
                         <div class="resume-content-col">
                             <div class="resume-subheading">
-                                <h3 class="resume-subheading__text">Education</h3>
+                                <h3 data-translate="education" class="resume-subheading__text">Education</h3>
                             </div>
                             <ul class="col-experience">
                                 <li>
                                     <span class="col-experience__line-left"></span>
                                     <div class="col-experience__text">
-                                        <h4>React</h4>
-                                        <h5>Сourse: Web application development using react (IT-Academy)</h5>
+                                        <h4 data-translate="react">React</h4>
+                                        <h5 data-translate="courseITAcademy">Сourse: Web application development using
+                                            react (IT-Academy)</h5>
+                                            
+                                            <button type="button" class="resume__certificate">
+                                                <span data-translate="certificate">
+                                                    certificate
+                                                </span>
+                                                <a id="certificate_link" href="resume/andrey_dut.pdf" download=""></a>
+                                            </button>
                                     </div>
                                     <span>
                                         <span class="col-experience__year-to">2023</span>
@@ -174,8 +203,8 @@
                                 <li>
                                     <span class="col-experience__line-left"></span>
                                     <div class="col-experience__text">
-                                        <h4>Front-end Developer</h4>
-                                        <h5>Сourse: UpSkill Lab (EPAM Systems)</h5>
+                                        <h4 data-translate="frontEnd">Front-end Developer</h4>
+                                        <h5 data-translate="courseEPAM">Сourse: UpSkill Lab (EPAM Systems)</h5>
                                     </div>
                                     <span>
                                         <span class="col-experience__year-to">2021</span>
@@ -186,8 +215,10 @@
                                 <li>
                                     <span class="col-experience__line-left"></span>
                                     <div class="col-experience__text">
-                                        <h4>Specialist in telecommunications systems management (engineer)</h4>
-                                        <h5>Military Academy of the Republic of Belarus</h5>
+                                        <h4 data-translate="engineerInfo">Specialist in telecommunications systems
+                                            management (engineer)</h4>
+                                        <h5 data-translate="militaryAcademy">Military Academy of the Republic of Belarus
+                                        </h5>
                                     </div>
                                     <span>
                                         <span class="col-experience__year-to">2019</span>
@@ -199,7 +230,7 @@
                     </div>
                     <div class="resume-skills">
                         <div class="resume-subheading">
-                            <h3 class="resume-subheading__text">Skills</h3>
+                            <h3 data-translate="skills" class="resume-subheading__text">Skills</h3>
                         </div>
                         <div class="resume-skills-box">
                             <div class="resume-skills-box__skill">
@@ -227,16 +258,22 @@
                                 <h4>Webpack</h4>
                             </div>
                             <div class="resume-skills-box__skill">
-                                <h4>WebSocket</h4>
+                                <h4>React</h4>
                             </div>
                             <div class="resume-skills-box__skill">
-                                <h4>React</h4>
+                                <h4>WebSocket</h4>
                             </div>
                             <div class="resume-skills-box__skill">
                                 <h4>React Native</h4>
                             </div>
                             <div class="resume-skills-box__skill">
                                 <h4>Redux</h4>
+                            </div>
+                            <div class="resume-skills-box__skill">
+                                <h4>Expo</h4>
+                            </div>
+                            <div class="resume-skills-box__skill">
+                                <h4>Vite</h4>
                             </div>
                         </div>
                     </div>
@@ -245,7 +282,7 @@
             <section class="main-cube-portfolio page-base">
                 <div class="main-wrapper-content">
                     <div class="header-page">
-                        <h2>Portfolio</h2>
+                        <h2 data-translate="portfolio">Portfolio</h2>
                         <span><i class="lnr lnr-briefcase"></i></span>
                     </div>
                     <div class="portfolio-projects">
@@ -254,10 +291,10 @@
                             <div class="portfolio-project__overlay">
                                 <h2>Page Weather</h2>
                                 <button type="button" class="portfolio-project__btn-demo portfolio-project_btn">DEMO
-                                    <a target="_blank" href="https://andreydut.github.io/Page-Weather/"></a>
+                                    <a target="_blank" href="https://andrei-dut.github.io/Page-Weather/"></a>
                                 </button>
                                 <button type="button" class="portfolio-project__btn-code portfolio-project_btn">GITHUB
-                                    <a target="_blank" href="https://github.com/AndreyDut/Page-Weather"></a>
+                                    <a target="_blank" href="https://github.com/andrei-dut/Page-Weather"></a>
                                 </button>
                             </div>
                         </div>
@@ -266,10 +303,10 @@
                             <div class="portfolio-project__overlay">
                                 <h2>Singolo</h2>
                                 <button type="button" class="portfolio-project__btn-demo portfolio-project_btn">DEMO
-                                    <a target="_blank" href="https://andreydut.github.io/simple-singolo/"></a>
+                                    <a target="_blank" href="https://andrei-dut.github.io/simple-singolo/"></a>
                                 </button>
                                 <button type="button" class="portfolio-project__btn-code portfolio-project_btn">GITHUB
-                                    <a target="_blank" href="https://github.com/AndreyDut/simple-singolo"></a>
+                                    <a target="_blank" href="https://github.com/andrei-dut/simple-singolo"></a>
                                 </button>
                             </div>
                         </div>
@@ -279,10 +316,10 @@
                             <div class="portfolio-project__overlay">
                                 <h2>Rain-Drops</h2>
                                 <button type="button" class="portfolio-project__btn-demo portfolio-project_btn">DEMO
-                                    <a target="_blank" href="https://andreydut.github.io/Rain-Drops/"></a>
+                                    <a target="_blank" href="https://andrei-dut.github.io/Rain-Drops/"></a>
                                 </button>
                                 <button type="button" class="portfolio-project__btn-code portfolio-project_btn">GITHUB
-                                    <a target="_blank" href="https://github.com/AndreyDut/Rain-Drops"></a>
+                                    <a target="_blank" href="https://github.com/andrei-dut/Rain-Drops"></a>
                                 </button>
                             </div>
                         </div>
@@ -291,10 +328,10 @@
                             <div class="portfolio-project__overlay">
                                 <h2>Chat</h2>
                                 <button type="button" class="portfolio-project__btn-demo portfolio-project_btn">DEMO
-                                    <a target="_blank" href="https://github.com/AndreyDut/Chat"></a>
+                                    <a target="_blank" href="https://github.com/andrei-dut/Chat"></a>
                                 </button>
                                 <button type="button" class="portfolio-project__btn-code portfolio-project_btn">GITHUB
-                                    <a target="_blank" href="https://github.com/AndreyDut/Chat"></a>
+                                    <a target="_blank" href="https://github.com/andrei-dut/Chat"></a>
                                 </button>
                             </div>
                         </div>
@@ -304,7 +341,7 @@
             <section class="main-cube-contacts page-base">
                 <div class="main-wrapper-content">
                     <div class="header-page">
-                        <h2>Contacts</h2>
+                        <h2 data-translate="contacts">Contacts</h2>
                         <span><i class="lnr lnr-envelope"></i></i></span>
                     </div>
                     <div class="contacts-content">
@@ -312,12 +349,13 @@
                             <div class="contacts-row__social">
                                 <h3>GitHub</h3>
                                 <span class="contacts-row__link"><i class="fab fa-github fa-4x"></i>
-                                    <a target="_blank" href="https://github.com/AndreyDut"></a></span>
+                                    <a target="_blank" href="https://github.com/andrei-dut"></a></span>
                             </div>
                             <div class="contacts-row__social">
                                 <h3>linkedin</h3>
                                 <span class="contacts-row__link"><i class="fab fa-linkedin-in fa-4x"></i>
-                                    <a target="_blank" href="https://www.linkedin.com/in/andrei-dutkovsky-100a931b4/"></a></span>
+                                    <a target="_blank"
+                                        href="https://www.linkedin.com/in/andrey-dutkovsky-100a931b4/"></a></span>
                             </div>
                         </div>
                         <div class="contacts-row">
@@ -342,6 +380,11 @@
     <script src="js/cube/jquery.touchSwipe.js"></script>
     <script src="js/cube/cube.js"></script>
     <script src="js/main.js"></script>
+    <script type="module">
+        import { setLanguage, updateText } from './js/translate.js';
+        window.setLanguage = setLanguage;
+        updateText();
+    </script>
 </body>
 
 </html>
