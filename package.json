@@ -5,6 +5,6 @@
   "scripts": {
     "sass:watch": "sass --watch css/sass/style.scss:css/style.css"
   },
-  "author": "",
+  "author": "https://github.com/andrei-dut",
   "license": "ISC"
 }
