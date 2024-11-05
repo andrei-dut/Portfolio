@@ -2,9 +2,8 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio Andrey Dutkovsky",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:watch": "sass --watch css/sass/style.scss:css/style.css"
   },
   "author": "",
   "license": "ISC"
