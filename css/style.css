@@ -36,7 +36,7 @@ h6 {
 
 .header {
   position: relative;
-  width: 220px;
+  width: 257px;
   height: 100vh;
   color: white;
   background-color: #2a2b30;
@@ -69,7 +69,7 @@ h6 {
 @media (max-width: 768px) {
   .header {
     position: absolute;
-    left: -220px; }
+    left: -257px; }
 
   .header-page {
     margin: 50px 0 30px 0; }
@@ -152,6 +152,7 @@ h6 {
 
 .header-main-lang {
   margin-top: auto;
+  margin-bottom: 8px;
   padding: 6px 12px;
   border-radius: 100px;
   align-self: center;
@@ -181,7 +182,7 @@ h6 {
     .header-mobile h2 {
       text-align: center;
       color: #fff;
-      font-size: 24px;
+      font-size: 18px;
       text-transform: uppercase;
       line-height: 40px; }
 
@@ -217,7 +218,8 @@ h6 {
   letter-spacing: 2px;
   font-size: 62px;
   font-weight: 500;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 8px; }
 
 .main-cube-home__text {
   display: inline-block;
@@ -241,7 +243,7 @@ h6 {
     font-size: 16px; } }
 @media (max-width: 375px) {
   .main-cube-home__name {
-    font-size: 24px; }
+    font-size: 20px; }
 
   .main-cube-home__text {
     font-size: 16px; } }

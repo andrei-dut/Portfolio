@@ -23,6 +23,7 @@
     font-size: 62px;
     font-weight: 500;
     color: #fff;
+    padding-bottom: 8px;
   }
   .main-cube-home__text{
     display: inline-block;
@@ -50,7 +51,7 @@
   }
   @media (max-width: 375px) {
     .main-cube-home__name{
-      font-size: 24px;
+      font-size: 20px;
     }
     .main-cube-home__text{
       font-size: 16px;
