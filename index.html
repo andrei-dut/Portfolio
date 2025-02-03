@@ -14,7 +14,7 @@
 <body>
     <div class="page-loading">
         <div class="loader">
-            <h4 data-translate="name">Andrey Dutkovsky</h4>
+            <h4 data-translate="name">Andrei Dutkovsky</h4>
             <span></span>
             <span></span>
             <span></span>
@@ -28,11 +28,11 @@
         <header class="header">
             <div class="header-mobile">
                 <a class="header-mobile__toggle"><i class="fas fa-bars"></i></a>
-                <h2 data-translate="name">Andrey Dutkovsky</h2>
+                <h2 data-translate="name">Andrei Dutkovsky</h2>
             </div>
             <div class="header-main">
                 <div class="header-main__card">
-                    <h2 data-translate="name" class="header-main__name">Andrey Dutkovsky</h2>
+                    <h2 data-translate="name" class="header-main__name">Andrei Dutkovsky</h2>
                     <img class="header-main__photo" src="img/my-photo.jpg" alt="my-photo">
                 </div>
                 <nav>
@@ -65,8 +65,9 @@
                     </ul>
                 </nav>
                 <div class="header-main-lang">
-                    <button onclick="setLanguage('en', event)" class="lang__btn active">EN</button>
-                    <button onclick="setLanguage('ru', event)" class="lang__btn">RU</button>
+                    <button onclick="setLanguage('en', event)" id="lang_en" class="lang__btn active">EN</button>
+                    <button onclick="setLanguage('ru', event)" id="lang_ru" class="lang__btn">RU</button>
+                    <button onclick="setLanguage('ja', event)" id="lang_ja" class="lang__btn">JA</button>
                 </div>
             </div>
         </header>
@@ -100,12 +101,12 @@
                             <ul class="about-me-info-list">
                                 <li>
                                     <span data-translate="_name" class="about-me-info-list__title">Name</span>
-                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="name">Andrey
+                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="name">Andrei
                                         Dutkovsky</span>
                                 </li>
                                 <li>
                                     <span data-translate="age" class="about-me-info-list__title">Age</span>
-                                    <span  class="about-me-info-list__colon">:</span> <span data-translate="years">27 Years</span>
+                                    <span  class="about-me-info-list__colon">:</span> <span id="age" data-translate="years">27 Years</span>
                                 </li>
                                 <li>
                                     <span data-translate="residence" class="about-me-info-list__title">Residence</span>
@@ -121,7 +122,7 @@
                                 <span data-translate="downloadRes">
                                     DOWNLOAD RESUME
                                 </span>
-                                <a id="download_link" href="resume/CV_Andrey_Dutkovsky_en.docx" download=""></a>
+                                <a id="download_link" href="resume/CV_Andrei_Dutkovski_en.docx" download=""></a>
                             </button>
                         </div>
                     </div>
@@ -191,7 +192,7 @@
                                                 <span data-translate="certificate">
                                                     certificate
                                                 </span>
-                                                <a id="certificate_link" href="resume/andrey_dut.pdf" download=""></a>
+                                                <a id="certificate_link" href="resume/andrei_dut.pdf" download=""></a>
                                             </button>
                                     </div>
                                     <span>
@@ -379,11 +380,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
     <script src="js/cube/jquery.touchSwipe.js"></script>
     <script src="js/cube/cube.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script type="module">
-        import { setLanguage, updateText } from './js/translate.js';
+        import { setLanguage } from './js/translate.js';
         window.setLanguage = setLanguage;
-        updateText();
+        setLanguage();
     </script>
 </body>
 

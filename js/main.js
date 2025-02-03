@@ -52,10 +52,46 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 
   document.querySelectorAll('.header-main-menu__elem').forEach(elem => {
     elem.addEventListener('click', () => {
-      console.log(document.querySelector('.header'));
       document.querySelector('.header').classList.remove('on')});
   });
 
 });
 
 window.addEventListener('load', () => document.querySelector('.page-loading').remove() );
+
+const translations = {
+  ru: {
+      ageSuffix: (age) => {
+          if (age % 10 === 1 && age % 100 !== 11) return " год";
+          if ([2, 3, 4].includes(age % 10) && ![12, 13, 14].includes(age % 100)) return " года";
+          return " лет";
+      }
+  },
+  en: {
+      ageSuffix: (age) => age === 1 ? " year old" : " years old"
+  },
+  ja: {
+      ageSuffix: () => "歳"
+  }
+};
+
+function calculateAge(birthYear, birthMonth, birthDay) {
+  const today = new Date();
+  const birthDate = new Date(birthYear, birthMonth - 1, birthDay);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+      age--;
+  }
+  return age;
+}
+
+window.updateAgeText = function updateAgeText(lang = window.localStorage.getItem('lang') || "en") {
+  const age = calculateAge(1997, 4, 24);
+  const translation = translations[lang];
+  document.getElementById("age").textContent = age + translation.ageSuffix(age);
+}
+
+
