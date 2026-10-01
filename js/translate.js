@@ -8,12 +8,7 @@ const translations = {
     contacts: "Contacts",
     imFront: "I'm Front-end developer",
     frontEnd: "Front-end developer",
-    aboutMeText: `I am responsible, disciplined, I treat my tasks responsibly
-      and bring everything to the
-      end and on time.I quickly master new areas of activity, master new skills.I work well in
-      a team, I know how to resolve conflicts and compromise, I do not experience difficulties
-      when establishing contact with colleagues.I constantly add to my knowledge base from
-      various sources.`,
+    aboutMeText: `Front-end developer with commercial experience building web and mobile applications. I work with React, Vue, Angular, and React Native, focusing on clean architecture, responsive UI, and reliable API integration. I value clear communication, ownership of tasks, and continuous learning.`,
     personalInfo: "Personal Information",
     _name: "Name",
     age: "Age",
@@ -47,12 +42,7 @@ const translations = {
     contacts: "Контакты",
     imFront: "Я Front-end разработчик",
     frontEnd: "Front-end разработчик",
-    aboutMeText: `Я ответственный, дисциплинированный, ответственно отношусь к своим задачам
-      и доводить все до
-      конца и в срок.Я быстро осваиваю новые сферы деятельности, овладеваю новыми навыками.Я хорошо работаю в
-      в команде я умею разрешать конфликты и идти на компромисс, я не испытываю трудностей
-      при установлении контакта с коллегами.Я постоянно пополняю свою базу знаний из
-      различных источников.`,
+    aboutMeText: `Front-end разработчик с коммерческим опытом создания веб- и мобильных приложений. Работаю с React, Vue, Angular и React Native: проектирую архитектуру, делаю адаптивный UI и интегрирую REST/WebSocket API. Ценю ответственность за результат, прозрачную коммуникацию в команде и постоянное развитие.`,
     personalInfo: "Личная информация",
     _name: "Имя",
     age: "Возраст",
@@ -86,11 +76,7 @@ const translations = {
     contacts: "連絡先",
     imFront: "私はフロントエンド開発者です",
     frontEnd: "フロントエンド開発者",
-    aboutMeText: `私は責任感があり、規律を守り、与えられたタスクに真剣に取り組み、
-      すべてを期限内に完了させます。新しい分野を素早く習得し、新しいスキルを身につけます。
-      チームでの作業が得意で、対立を解決し、妥協点を見つけることができます。
-      同僚と円滑にコミュニケーションを取ることができます。
-      常にさまざまな情報源から知識を増やしています。`,
+    aboutMeText: `Webおよびモバイルアプリケーションの開発経験を持つフロントエンドエンジニアです。React、Vue、Angular、React Nativeを使い、クリーンな設計、レスポンシブUI、安定したAPI連携を重視しています。責任感のあるタスク遂行、チームでの明確なコミュニケーション、継続的な学習を大切にしています。`,
     personalInfo: "個人情報",
     _name: "名前",
     age: "年齢",
