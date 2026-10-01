@@ -17,12 +17,10 @@ const translations = {
     personalInfo: "Personal Information",
     _name: "Name",
     age: "Age",
-    years: "27 years old",
     residence: "Residence",
     minsk: "Minsk, Belarus",
     phone: "Phone",
     downloadRes: "DOWNLOAD RESUME",
-    phrase: "Life requires movement.",
     myRes: "My Resume",
     experience: "Experience",
     CNIITU: "CNIITU-IT",
@@ -57,12 +55,10 @@ const translations = {
     personalInfo: "Личная информация",
     _name: "Имя",
     age: "Возраст",
-    years: "27 лет",
     residence: "Местожительство",
     minsk: "Минск, Беларусь",
     phone: "Телефон",
     downloadRes: "СКАЧАТЬ РЕЗЮМЕ",
-    phrase: "Жизнь требует движения.",
     myRes: "Мое резюме",
     experience: "Опыт",
     CNIITU: "ЦНИИТУ-ИТ",
@@ -96,12 +92,10 @@ const translations = {
     personalInfo: "個人情報",
     _name: "名前",
     age: "年齢",
-    years: "27歳",
     residence: "居住地",
     minsk: "ミンスク、ベラルーシ",
     phone: "電話",
     downloadRes: "履歴書をダウンロード",
-    phrase: "人生には動きが必要です。",
     myRes: "私の履歴書",
     experience: "経験",
     CNIITU: "CNIITU-IT",
@@ -139,6 +133,36 @@ export function setLanguage(lang = _lang, e) {
   updateText(lang);
 }
 
+const BIRTH_DATE = { year: 1997, month: 4, day: 24 };
+
+const ageSuffix = {
+  en: (age) => (age === 1 ? " year old" : " years old"),
+  ru: (age) => {
+    if (age % 10 === 1 && age % 100 !== 11) return " год";
+    if ([2, 3, 4].includes(age % 10) && ![12, 13, 14].includes(age % 100)) return " года";
+    return " лет";
+  },
+  ja: () => "歳",
+};
+
+function calculateAge({ year, month, day }) {
+  const today = new Date();
+  const birthDate = new Date(year, month - 1, day);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    age--;
+  }
+  return age;
+}
+
+function updateAgeText(lang) {
+  const age = calculateAge(BIRTH_DATE);
+  document.getElementById("age").textContent = age + ageSuffix[lang](age);
+}
+
 function updateText(lang) {
   document.querySelectorAll("[data-translate]").forEach((element) => {
     const key = element.getAttribute("data-translate");
@@ -147,5 +171,5 @@ function updateText(lang) {
 
   const download_link = document.getElementById("download_link");
   download_link.setAttribute("href", `resume/CV_Andrei_Dutkovsky_${lang.startsWith("ja") ? 'en' : lang}.docx`);
-  window.updateAgeText();
+  updateAgeText(lang);
 }

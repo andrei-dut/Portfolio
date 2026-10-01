@@ -56,16 +56,6 @@
     border-color: var(--primary);
     background-color: var(--primary);
   }
-  .main-cube-about-me__quote {
-    font-family: "Dancing Script", cursive;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    padding:20px 0px;
-    margin: auto auto;
-    color: #222;
-    text-align: center;
-  }
   @media (max-width: 1024px) {
     .about-me-content{
       flex-wrap: wrap;
@@ -77,11 +67,6 @@
     }
     .about-me-info:last-of-type{
       padding-left: 0px;
-    }
-  }
-  @media (max-width: 414px) {
-    .main-cube-about-me__quote {
-      font-size: 18px;
     }
   }
   
