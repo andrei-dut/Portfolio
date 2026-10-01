@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.1.0",
-  "description": "Portfolio Andrey Dutkovsky",
+  "description": "Portfolio Andrei Dutkovsky",
   "scripts": {
     "sass:watch": "sass --watch css/sass/style.scss:css/style.css"
   },

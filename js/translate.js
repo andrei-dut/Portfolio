@@ -23,7 +23,8 @@ const translations = {
     downloadRes: "DOWNLOAD RESUME",
     myRes: "My Resume",
     experience: "Experience",
-    CNIITU: "CNIITU-IT",
+    PLM: "PLM Technologies",
+    CNIITU: "CNIITU",
     KB: "KB Unmanned Helicopters",
     present: "Present time",
     commander: "Platoon Commander",
@@ -61,7 +62,8 @@ const translations = {
     downloadRes: "СКАЧАТЬ РЕЗЮМЕ",
     myRes: "Мое резюме",
     experience: "Опыт",
-    CNIITU: "ЦНИИТУ-ИТ",
+    PLM: "Технологии ПЛМ",
+    CNIITU: "ЦНИИТУ",
     KB: "КБ Беспилотные Вертолеты",
     present: "Настоящее время",
     commander: "Командир взвода",
@@ -98,7 +100,8 @@ const translations = {
     downloadRes: "履歴書をダウンロード",
     myRes: "私の履歴書",
     experience: "経験",
-    CNIITU: "CNIITU-IT",
+    PLM: "PLM Technologies",
+    CNIITU: "CNIITU",
     KB: "KB 無人ヘリコプター",
     present: "現在",
     commander: "小隊長",
@@ -170,6 +173,6 @@ function updateText(lang) {
   });
 
   const download_link = document.getElementById("download_link");
-  download_link.setAttribute("href", `resume/CV_Andrei_Dutkovsky_${lang.startsWith("ja") ? 'en' : lang}.docx`);
+  download_link.setAttribute("href", `resume/CV_Andrei_Dutkovsky_${lang.startsWith("ja") ? "en" : lang}.docx`);
   updateAgeText(lang);
 }
